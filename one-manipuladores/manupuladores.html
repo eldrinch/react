@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipuladores</title>
+</head>
+<body>
+    <h2>Manipuladores O=in-line</h1>
+    <button type="button" onclick="alert('Você clicou no botão')">Click Aqui    
+    </button>
+    <a href="#" onclick="alert('Voce clicou no link')">Click Aqui </a>
+
+    <h2>Manipuladores atributos</h2>
+    <button type="button" class="boton">Click Aqui</button>
+    <a href="#" class="link">Click Aqui </a>
+
+
+    <h2>Manipuladores DOM2 adddEventListener() removeElementListener()</h2>
+    <button type="button" class="boton1">Click Aqui</button>
+    <a href="#" class="link1">Click Aqui </a>
+
+    <script>
+        var btn = document.querySelector('.boton');
+        var lnk = document.querySelector('.link');
+
+        btn.onclick = ()=>{
+            window.alert('Você clicou no botão pelo atributo')
+        }
+        lnk.onclick = ()=>{
+            window.alert('Você clicou no botão pelo atributo')
+        }
+
+        var btn1 = document.querySelector('.boton1');
+        var lnk1 = document.querySelector('.link1');
+
+        btn1.addEventListener('click', alerta);
+
+        function alerta(e){
+            let o_event = e ? e : window.event;
+
+        let msg = "posição X é  " + o_event.screenX;
+
+        //window.alert('Você clicou no botão addEventListener')
+        window.alert(msg)
+        }
+
+
+    </script>
+
+</body>
+</html>
