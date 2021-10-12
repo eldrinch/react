@@ -28,6 +28,15 @@
       <li>Introdução ao Desenvolvimento Web</li>
       <li>Desenvolvimento backend</li>
     </ul>
+
+    <h2>Exemplo mouseover e mouseOut</h2>
+    <p id="b">Passe o mouse</p>
+
+    <h2>Ordem de execuçao dos Eventos</h2>
+
+    <input id="imp" value="Clique aqui" type="button" />
+    <textarea id="txta" cols="30" rows="6"></textarea>
+    <input type="button" onclick="txta.value='' " value="Clear" />
   </body>
 
   <script>
@@ -48,6 +57,7 @@
     let ul = document.getElementById("ul");
     ul.addEventListener("click", selectItem);
 
+    //buscamos nosso elementos selecionamos a acao selectedItem
     function selectItem(event) {
       if (event.target.tagName != "LI") return;
       if (event.ctrlKey || event.metaKey) {
@@ -57,6 +67,7 @@
       }
     }
 
+    //add o estilo
     function singleSelect(li) {
       let selected = ul.querySelectorAll(".selected");
       for (let elem of selected) {
@@ -65,8 +76,35 @@
       li.classList.add("selected");
     }
 
+    //varios li selecionados add a uma classe de estilo
     function toggleSelect(li) {
       li.classList.toggle("selected");
+    }
+
+    //mouseOver e mouseOut
+    let q = document.getElementById("b");
+    q.addEventListener("mouseover", mouseOver, false);
+    q.addEventListener("mouseout", mouseOut, false);
+
+    function mouseOver(event) {
+      event.target.innerHTML = "O mouse esta no elemento";
+    }
+    function mouseOut(event) {
+      event.target.innerHTML = "Passe o mouse";
+    }
+
+    //Ordem de execuçao dos Eventos
+    let imp = document.getElementById("imp");
+    imp.addEventListener("click", log);
+    imp.addEventListener("mouseup", log);
+    imp.addEventListener("mousedown", log);
+    imp.addEventListener("contextmenu", log);
+    imp.addEventListener("dbclick", log);
+
+    function log(event) {
+      document.getElementById("txta").value +=
+        event.type + "[target: " + event.which + "]\n";
+      document.getElementById("txta").scrolltop = document.getElementById(txta);
     }
   </script>
 </html>

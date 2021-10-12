@@ -34,5 +34,29 @@ click, dblclick, mouseenter, mouseleave, e contextmenu.
 Ordem dos e eventos: Mousedown -> mouseup -> click.
 Propiedades: ScreenX, screenY, clientX, clientY, alterKey, ctrlKey, shiftKey, metaKey, button, buttons, relatedtargets.
 
+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
+
+1.3.2. MouseEvent - Eventos do Mouse - Parte II
+https://youtu.be/6jUMTNyzi8Q
+Mouseover e mouseout e Ordem de execuçao dos Eventos
+
+1.4. KeyboardEvent - Eventos do teclado
+https://youtu.be/DrnK3MMdLlQ
+Eventos; keydown e keyup
+Ordem dos eventos; keysown, beforeinput, input e keyup.
+Propiedades; key, code, location, altKey, shiftKey, ctrlKey, metaKey, repeat, isComposing.
+
+1.5. FocusEvent - Eventos de foco
+https://youtu.be/ffJHXjajZns
+FocusEvent, eventos relacionados ao foco, 
+Eventos; Focusin 'recebo o foco', focusout 'perdi o foco de algum elemento', blur e focus 'estou com o foco'
+Ordem dos Eventos; 
+Focusin -> focus.
+Focusout -> focusin -> blur -> focus.
+Propiedades; RelatedTerget 'de qual elemento estou perdendo o foco'
+
+
+
+
 
 

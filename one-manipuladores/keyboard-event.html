@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyboardEvent - Eventos do teclado</title>
+    <style>
+      .invalid {
+        border-color: red;
+      }
+      #error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>KeyboardEvent - Eventos do teclado</h2>
+    <p>Exemplo do evento input</p>
+    <br />
+    Texto: <input type="text" id="a" value="" />
+
+    <h2>Combinação de duas teclas</h2>
+
+    <p>Presione 'd' e 'a' juntos</p>
+
+    <h2>FocusEvent Evento de foco</h2>
+
+    Digite seu email; <input type="email" id="input" />
+    <div id="error"></div>
+  </body>
+
+  <script>
+    let imp = document.getElementById("a");
+    imp.addEventListener("keydown", funckeyDown, false);
+    imp.addEventListener("keyup", funcKeyUp, false);
+
+    function funckeyDown(event) {
+      event.target.style.background = "blue";
+    }
+
+    function funcKeyUp(event) {
+      event.target.style.background = "white";
+    }
+    //Combinação de duas teclas
+    function runDoubleKeys(func, ...codes) {
+      let pressed = new Set();
+
+      document.addEventListener("keydown", (event) => {
+        pressed.add(event.code);
+
+        console.log(event.code);
+
+        for (let code of codes)
+          if (!pressed.has(code)) {
+            return;
+          }
+        pressed.clear();
+        func();
+      });
+
+      document.addEventListener("keyup", (event) => pressed.delete(event.code));
+    }
+    //chamando a nossa função
+    runDoubleKeys(() => alert("Combinação de duas teclas"), "KeyA", "KeyD");
+
+    //FocusEvent Evento de foco
+    let inp = document.getElementById("input");
+
+    inp.addEventListener("blur", funcBlur);
+    inp.addEventListener("focus", funcFocus);
+
+    function funcBlur(event) {
+      if (!event.target.value.includes("@")) {
+        event.target.classList.add("invalid");
+        document.getElementById("error").innerHTML =
+          "Email invalido entre com um email correto";
+      }
+    }
+    function funcFocus(event) {
+      if (event.target.classList.contains("invalid")) {
+        event.target.classList.remove("invalid");
+        document.getElementById("error").innerHTML = "";
+      }
+    }
+  </script>
+</html>
