@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i Interface de usuario UIEvent</title>
+  </head>
+
+  <p>Verifica se os cookies estão liberados</p>
+
+  <h2>Exemplo para redimensionamento de janela</h2>
+  <p>Redimensou a páagina <span id="teste">0 </span>vezes</p>
+
+  <body onload="checkCookies()">
+    <h2>BeforeUnload</h2>
+    <a href="http:igti.com.br">Pagina do IGTI</a>
+
+    <script>
+      //Verifica se os cookies estao habilitados
+      if (navigator.cookieEnabled) {
+        alert("Cookies esta habilitados");
+      } else {
+        alert("Cokies não está habilitado");
+      }
+      //Redimensionamento de tela
+      window.addEventListener("resize", countResize);
+      let count = 0;
+      function countResize() {
+        let textElement = (count += 1);
+        document.getElementById("teste").innerHTML = textElement;
+      }
+
+      //Beforeunload
+
+      window.addEventListener("beforeUnload", () => {
+        console.log("Antes de sair");
+      });
+      window.addEventListener("unload", () => {
+        console.log("Saiu da Pagina");
+      });
+    </script>
+  </body>
+</html>

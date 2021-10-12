@@ -1,0 +1,38 @@
+Mapa de eventos
+1.1.1. Fundamento de eventos - Parte I
+https://youtu.be/_Q5S8Cs1lqM
+Mapa de eventos de uma aplicação web,
+Manipuladores de eventos o que sao, quais sao os Manipuladores existentes
+Arquiterura de eventos o que acontece por tras quando um evento é disparado
+Interface event: Base de nossos objetos de eventos
+Manipuladores de eventos, um evento é de tres tipos
+Mutaçao , altera a estrutura do DOM
+Logicos disparados por sistemas ou otro sistema dispara de um sistema externo
+Interface de Usuario, interage a traves da aplicação web são disparados os eventos.
+As açoẽs de um evento são definidas pelos Manipuladores de eventos são
+In-line, atribui diretamente na estrutura do DOM
+Atribuidos, Propiedades dos elementos do DOM
+Metodos DOM2, addEventlistener() e removeEventListener() no IE atachEvent()
+Argumentos dos eventos; Quando se define o manipulador se define uma função que receve um parametro que contem as informaçoes inherentes ao evento informaçoes adicionais depende do tipo de evento (e)
+
+1.1.2. Fundamento de eventos - Parte II
+https://youtu.be/441VV0wsCqA
+Cada tipo de evento trae algum tipo de informaçao ai depende do tipo de evento, esses argumantos que cabem, quando o evento é disparado o que acontece é classificado em 3 fases
+Capturing: O evento e disparado mas executado primeiro nos elementos ancestrais.
+Target; Seu usuario em cada boton dentro da estrutura da arvore DOM
+Bubing A açaõ acontece primeiro no target e depois propagada para os eventos ancestrais ao contrario do Capturing.
+Event interface: Event Reference developer.mozilla.org - events informaçoes desta interface, cada event é baseaso em interface event, todas as funçoes de cada tipo de eventos, relacionados ao teclado, mouse, posiçao, cada interface tem suas Propiedades adicionais ex MouseEvent, a interface Events é a base.
+
+1.2. UIEvent - Evento da interface de usuário
+https://youtu.be/HL1j9YKcpsU
+UIEvent eventos de interface de usuario, Eventos: load, unload, abort, error, select e resize. Propiedades view e detail. Refencia UIEvnt é uma interface as propiedades são herdadas para esta interface
+
+1.3.1. MouseEvent - Eventos do Mouse - Parte I
+https://youtu.be/7kYdeH30iww
+Mouse Event; mouseDown, mouseup, mouseover, mouseout, mousemove.
+click, dblclick, mouseenter, mouseleave, e contextmenu.
+Ordem dos e eventos: Mousedown -> mouseup -> click.
+Propiedades: ScreenX, screenY, clientX, clientY, alterKey, ctrlKey, shiftKey, metaKey, button, buttons, relatedtargets.
+
+
+

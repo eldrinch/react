@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      div,
+      p,
+      a,
+      div1,
+      p1,
+      a1 {
+        padding: 15px 30px;
+        display: block;
+        border: 2px solid #000;
+        background: #fff;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propagação de eventos Capturing e Bubbling</title>
+  </head>
+  <body>
+    <h2>Borbulhamento, Bubbling</h2>
+    <div onclick="alert('Borbulhamento: ' + this.tagName)">
+      DIV
+      <p onclick="alert('Borbulhamento: ' + this.tagName)">
+        P
+        <a href="#" onclick="alert('Borbulhamento:  ' + this.tagName)">A</a>
+      </p>
+    </div>
+    <h2>Capturing</h2>
+    <div1
+      >DIV
+      <p1
+        >P
+        <a1 href="#">A</a1>
+      </p1>
+    </div1>
+
+    <script>
+      let elements = document.querySelectorAll("div1,p1,a1");
+
+      function showTagName() {
+        alert("Captura: " + this.tagName);
+      }
+      for (let elem of elements) {
+        elem.addEventListener("click", showTagName, true);
+      }
+    </script>
+  </body>
+</html>
