@@ -79,4 +79,21 @@ function myFunction (){ /* codigo*/}
 Function Expression
 let myFunction = function(){/*codigo*/}
 
+Inmmediately Invoked Function Expression
+(function(){})();
+Um dos beneficios é que da privacidade de minhas funçoes não poluindo meu escopo global
+Os principais beneficios de funcoes imediatas, Evitar a poluição do escopo global, Privacidade de dados , Closures, Renovar variaveis, Capturar o objeto Global.
+
+2.5.1. Proxy - Parte I
+https://youtu.be/TOpNbEB9_IQ
+Proxy, conceito de metaprogramação E um objeto que representa outro objeto, intercenptar todas as operaçoes que faz em nosso objeto destino.
+
+2.5.2. Proxy - Parte II 
+https://youtu.be/UZE4Md_B9oA
+Reflect API que facilita a manipulação dos proxys
+
+2.5.2. Proxy - Parte II
+https://youtu.be/ZJYD7hvmuzs
+Curry Conceito de programacao funcional uma func com varios parametros, transfromando ela em varias funçoes, em aplicaçoes q envolve reutilzar funçoes que se reaproveitam com parametros
+
 

@@ -16,11 +16,12 @@ const handler = {
 
 //let carroProxy = new Proxy(carro, {});
 let carroProxy = new Proxy(carro, handler);
-
+console.log("-----------------");
 console.log(carro.ano);
 console.log(carroProxy.ano);
 console.log(carro.modelo);
 console.log(carroProxy.modelo);
+console.log("-----------------");
 
 //EXEMPLO PROXY PARA TRADUTOR
 let tradutor = {
