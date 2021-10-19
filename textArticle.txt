@@ -97,3 +97,5 @@ https://youtu.be/ZJYD7hvmuzs
 Curry Conceito de programacao funcional uma func com varios parametros, transfromando ela em varias funçoes, em aplicaçoes q envolve reutilzar funçoes que se reaproveitam com parametros
 
 
+
+
