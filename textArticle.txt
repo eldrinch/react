@@ -55,8 +55,28 @@ Focusin -> focus.
 Focusout -> focusin -> blur -> focus.
 Propiedades; RelatedTerget 'de qual elemento estou perdendo o foco'
 
+JavaScript: Funções - Parte I
+https://youtu.be/c5cHxIgVNDc
+2.1. Escopos; Define a acesivilidade das variaveis dentro de nosso aplicação, projeto, temos o escopo global e o 
+Local sao variavies dentro de blocos de laços de repetição de estruturas condicionais, as variaveis locais podem ser de escopo função e escopo bloco
 
+2.2.1. Closures - Parte I
+https://youtu.be/QQofbUbLcYw
+Closures ou fechamentos, permite que funçoes aninhadas accesem variveis fora do seu escopo, o escopo lexico dentro do JS orientaçao de objetos, encapsulamento
 
+2.2.2. Closures - Parte II   
+https://youtu.be/x1Q6GSsIVCs
 
+2.3. Prototypes
+https://youtu.be/hmNbn0f2OlA
+è um objeto toda funçao recebe uma propiedade chamada prototype tem uma referencia a uma outra propiedade chamada _PROTO_ que herda do object, permite adicionar propiedades, metodos ou funcoes a uma o mais instancias de um objeto de uma função que a gente declara. Isso posibilita heranca, reutilizaçao de objetos, consumo de memoria
+
+JavaScript: Funções - Parte II
+2.4. IIFE - Funções imediatas; Immediately Invoked Function Espression, logar tan logo que uma função for definida
+Function Declaration 
+function myFunction (){ /* codigo*/}
+
+Function Expression
+let myFunction = function(){/*codigo*/}
 
 
