@@ -111,3 +111,7 @@ ele enfilera todas as aplicações em uma fila de execução
 3.4. Iterators
 https://youtu.be/1iGI8CnT2Mc
 ES6 definen um protocolo para iterar encima de nosso objetos. 
+
+3.5. Generators
+https://youtu.be/oflISCJlkTY
+Sao funçoes geradoras inicia ela traz um objeto generator(iterator) Generator inicia por meio da chamada next() ou por loops, Retorna o valor yield, pausa(salva o estado). Retorna o valor yield pausa (salva o estado)
