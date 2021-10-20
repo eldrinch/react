@@ -96,6 +96,18 @@ Reflect API que facilita a manipulação dos proxys
 https://youtu.be/ZJYD7hvmuzs
 Curry Conceito de programacao funcional uma func com varios parametros, transfromando ela em varias funçoes, em aplicaçoes q envolve reutilzar funçoes que se reaproveitam com parametros
 
+JavaScript Assíncrono
+3.1.1. Promises
+https://youtu.be/uqhEytWk3Yo
+O JS é single track para ser uma açao executado no futuro de forma assincrona, ela pode acontecer ou nao ECMASCRIPT6 ES6 
 
+3.1.2 Promises API
+https://youtu.be/5U31omEvGUs
 
+3.3. Event Loop
+https://youtu.be/Qh8RbZUCJuA
+ele enfilera todas as aplicações em uma fila de execução
 
+3.4. Iterators
+https://youtu.be/1iGI8CnT2Mc
+ES6 definen um protocolo para iterar encima de nosso objetos. 
