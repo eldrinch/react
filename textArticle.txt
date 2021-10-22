@@ -115,3 +115,48 @@ ES6 definen um protocolo para iterar encima de nosso objetos.
 3.5. Generators
 https://youtu.be/oflISCJlkTY
 Sao funçoes geradoras inicia ela traz um objeto generator(iterator) Generator inicia por meio da chamada next() ou por loops, Retorna o valor yield, pausa(salva o estado). Retorna o valor yield pausa (salva o estado)
+
+ECMAScript
+4.1. Contexto Histórico
+https://youtu.be/yNLnDWadNZ0
+
+4.2. ECMAScript 2015
+https://youtu.be/9DvLVU0s2sw
+ES6, Melhorias let + const, arrow function, classes, template Strings, destructing, default, res e spread operator.
+
+4.2.2. ES6
+https://youtu.be/BrNyitFwn6Y
+ 
+4.3. ES7
+https://youtu.be/fUYOia2FDMQ
+Operador de exponenciaça, Array.propotypes.includes
+ 
+4.4.1. ES8
+https://youtu.be/BI1kWfzEHow
+String padding, Trailing commas, async+await sp ADIICONAR E SUBSTItuir
+  
+4.4.2. ES8 - Parte II
+https://youtu.be/U40F33P8HwI
+
+4.5. ES9
+https://youtu.be/YmihWPnzFHo
+ES2018 ou ES9 Promises.prototype.finally(), Iteração asincrons, propiedades Rest + Spread operator
+
+4.6. ES10
+https://youtu.be/6GhizMHuwlU
+ES2019 ES10 Array.Flat(), String.trimStart(), string.trimEnd(), Array.sort(),
+
+ 4.7. ES11
+ https://youtu.be/1ChPoJ73QA0
+ ECMAScript 2020 ES11, BigInt, Private Methods, Nullis coalescing Operator, globalThis, Promise.allSettled, Optional Chaining, Dynamic import.  
+
+Propostas do ECMAScript esta no github
+github.com/tc39/proposals
+
+Bibliotecas
+5.1. Biblioteca: Lodash
+https://youtu.be/k6d4CF-ltr0
+Biblioteca Lodash a mas usada, cleave.js especifica para validar a formataçao de dados.
+sweetalert2.github.io alertas
+community.howlerjs.comalgolia.com paga
+
