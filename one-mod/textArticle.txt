@@ -160,3 +160,26 @@ Biblioteca Lodash a mas usada, cleave.js especifica para validar a formataçao d
 sweetalert2.github.io alertas
 community.howlerjs.comalgolia.com paga
 
+5.2. Biblioteca: Date-fns
+https://youtu.be/7F5wWY87FYg
+date-fns para datas outra é a moment mas tem que carregar a lib , a date pode carregar modulos.
+
+5.3. Biblioteca: Chart.js
+https://youtu.be/lucj1dszWrk
+para apresentaçao de elementos graficos, outra detrive muiot forte para data visualization.
+
+5.4. Biblioteca: Axios
+https://youtu.be/bdmoclmqV8E
+Para poder fazer consumo de APIs, se cria uma pasta services dentro dela um arquivo postPai.js onde tratamos a rota e a chamada atraves de uma funçaõ
+
+import axios from 'axios';
+const apiPosts = axios.create ({
+baseURL:'https://jsonplaceholder.typicode.com/'
+})
+
+async function getPosts(){
+  let res = await apiPosts.get('posts'); 
+  return res.data; 
+}
+
+export { getPosts }
