@@ -1,0 +1,44 @@
+How to create a react project
+npx create-react-app first --template typescritp
+
+To create a project called my-app, run this command:
+npx create-react-app my-app
+npm init react-app my-app
+yarn create react-app my-app
+
+Selecting a template#
+npx create-react-app my-app --template [template-name]
+
+open with vscode 
+code .
+
+
+
+
+start the project
+yarn start
+npm start
+
+removendo atquivos que não seram utilizados no projeto
+no public =
+logo192.png 
+logo512.png
+index.html
+
+
+no src =
+App.css
+App.tsx =
+	div elimated
+index.css
+reportWebVitals.ts
+setupTests.ts
+no index.tsx =
+	logo.svg
+	import './index.css';
+	import reportWebVitals from './reportWebVitals';
+
+	// If you want to start measuring performance in your app, pass a function
+	// to log results (for example: reportWebVitals(console.log))
+	// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+	reportWebVitals();
