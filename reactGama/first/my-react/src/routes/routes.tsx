@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './views/home';
-import Contact from './Contact';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+import Home from '../views/home';
+import Contact from '../Contact';
 
 const Routes: React.FC = () => {
   return (

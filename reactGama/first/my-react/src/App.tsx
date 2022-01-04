@@ -1,14 +1,13 @@
-// import Home from './views/home';
-import { Router } from 'react-router';
+import Router from './routes/routes';
+import GlobalStyle from './style/globalStyle';
 
 function App() {
-  return <Router />;
-  // <div>
-  //   <h1>Hello React World</h1>
-  //   <input type="text" />
-  //   <input type="text" />
-  //   <button>Clique aqui</button>
-  // </div>
+  return (
+    <>
+      <Router />
+      <GlobalStyle />
+    </>
+  );
 }
 
 export default App;
