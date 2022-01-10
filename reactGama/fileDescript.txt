@@ -90,10 +90,101 @@ ReactDOM.render(
 tratar tora por medio de um arquivo 'routes.tsx' importar e add
 yarn add react-router-dom
 yarn add @types/react-router-dom -D
+ sssssssão e compativel com DOM6
+npm install react-router-dom@5.3.0
+npm install --save react-router-dom
+
+Estados, estado de logado
+A arroe function dentro do evento evita que carregue e espera que a requisiçao seja executada
+
+Trabalhando com APIS client data setting
+Construir configurar nossas requisiçoes para a API rest 
+Importar para chamdo de API
+Agora usar um serviço WEB Webhook.site, toda vez que acessar este site ele vai gerar uma URL unica, serve para testar nossas requisiçao APIS 
+Para teste dos BD vamos fazer uso de insoni pode ser tambem postman ai vai do gusto
+crear uma coleçao no POST
+
+
+Uso do react-toastify
+yarn add react-toastify
+Add no src/App.tsx
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+Uso do react-lottie
+yarn add @types/react-lottie -D
+npm i --save-dev @types/react-lottie
+
+Procurar uma animação nesse loader no site ofical deles:
+https://lottiefiles.com/course/a-beginners-guide-to-lottie?gclid=Cj0KCQiAoNWOBhCwARIsAAiHnEjKBOOdsCMP0FJ4DUL-3zuoaPrvSG5wk2VgiofiKls9UBTsU82gfxUaAjOhEALw_wcB
+Copiar os parametros no
+https://www.npmjs.com/package/react-lottie
+
+Na autenticação vemos a necesidade de armazenar um token
+website: JSON Web Tokens - jwt.io
+O que vai ser feito enviar o token para API /session, as informações data que é o corpo da requisição, guardar o localStorage dentro de nossa aplicação.
+Autenticação aprendemos a armazenar token em nosso localStorage
+
+ROTAS PRIVADAS
+Para poder conservar os tokens tem que add uma nova extensão 
+yarn add jsonwebtoken
+yarn add @types/jsonwebtoken -D
+Ao parecer essa extensao nao captura a proiedade exp
+teremos que installar o 
+yarn add jwt-decode
+
+vamos reestruturar o index da home
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Nav from '../../components/Nav';
+import Footer from '../../components/Footer';
+
+import { Container } from './style';
+
+const Home: React.FC = () => {
+  const [isLoad, setIsLoad] = useState(false);
+
+  return (
+    <>
+      <Nav />
+      <Container>
+        {isLoad ? (
+          <div>
+            <p>Carregando</p>
+          </div>
+        ) : (
+          <div>
+            <h1>Home</h1>
+            <Link to="/contact">Acessa página de contato</Link>
+          </div>
+        )}
+        <div className="button-container">
+          <button onClick={() => setIsLoad(!isLoad)}>Clique aqui</button>
+        </div>
+      </Container>
+      <Footer />
+    </>
+  );
+};
+
+export default Home;
 
 
 
+Para aplicar REDUX se cria uma pasta store -> modules -> user: action.ts, reducer.ts, type.ts
+yarn add redux
+yarn add react-redux
+yarn add @type/react-redux -D
+para remover  yarn remove @types/react-redux
+yarn add @types/redux -D
 
 
+NO Dash
+import { useDispatch } from 'react-redux';
+import { addNewUser } from '../../store/modules/user/action';
 
+No footer e nav 
+import { useSelector } from 'react-redux';
+import { IGlobalState } from '../../store/modules/user/types';
 
+install insomnia
