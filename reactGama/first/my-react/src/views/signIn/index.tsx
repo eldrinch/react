@@ -26,8 +26,7 @@ const SingIn: React.FC = () => {
           const sessionToken = JSON.stringify(response.data.token);
           localStorage.setItem('@meuserviceToken', sessionToken);
           setLoad(false);
-          console.log(response.data);
-          toast.success('Cadastro realizado com sucesso', {
+          toast.success('Login realizado com sucesso', {
             hideProgressBar: false,
             onClose: () => history.push('/dashboard'),
           });

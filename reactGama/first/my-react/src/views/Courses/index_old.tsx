@@ -9,7 +9,7 @@ interface IData {
   email: string;
 }
 
-const Contact: React.FC = () => {
+const Courses: React.FC = () => {
   const [data, setData] = useState<IData>({} as IData);
   const [submit, setSubmit] = useState(false);
 
@@ -59,4 +59,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default Courses;

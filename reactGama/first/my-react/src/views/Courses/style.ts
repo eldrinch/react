@@ -8,6 +8,7 @@ export const Container = styled.div`
   height: 100vh;
   background-color: green;
   color: #fff;
+  font-size: 2em;
 
   .form-wrapper {
     display: grid;
